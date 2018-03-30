@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+.digit {
+  width: 200px;
+}
+
+.clock {
+  stroke: "black";
+  stroke-width: "1";
+  fill: none;
+}
