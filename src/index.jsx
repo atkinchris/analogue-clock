@@ -3,9 +3,18 @@ import { render } from 'react-dom'
 
 import './styles.css'
 
+import Clock from './Clock'
+
 const mountElement = document.getElementById('root')
 
-render(
-  <h1>Hello world</h1>,
-  mountElement,
-)
+const renderClock = () => {
+  const tick = (Date.now() / 30) % 360
+  render(
+    <Clock tick={tick} />,
+    mountElement,
+  )
+
+  requestAnimationFrame(renderClock)
+}
+
+requestAnimationFrame(renderClock)

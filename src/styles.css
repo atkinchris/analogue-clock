@@ -3,12 +3,15 @@ body {
   padding: 1rem;
 }
 
-.digit {
-  width: 200px;
+.hand {
+  stroke-width: 5px;
+  stroke: #000;
+  stroke-linecap: round;
 }
 
-.clock {
-  stroke: "black";
-  stroke-width: "1";
+.frame {
+  stroke-width: 5px;
+  stroke: #000;
+  opacity: 0.05;
   fill: none;
 }
