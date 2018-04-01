@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Clock = ({ rotations }) => (
-  <svg width="100" height="100">
+  <g>
     <circle cx="50" cy="50" r="45" className="frame" />
     <g transform={`rotate(${rotations[0]} 50 50)`}>
       <line x1="50" y1="40" x2="50" y2="15" strokeLinecap="square" className="hand" />
@@ -12,7 +12,7 @@ const Clock = ({ rotations }) => (
       <line x1="50" y1="40" x2="50" y2="15" strokeLinecap="square" className="hand" />
       <line x1="50" y1="50" x2="50" y2="25" strokeLinecap="round" className="hand" />
     </g>
-  </svg>
+  </g>
 )
 
 Clock.propTypes = {

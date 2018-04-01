@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 
 import './styles.css'
 
-import App from './components/App'
+import Digits from './components/Digits'
 import DIGITS from './digits'
 
 const mountElement = document.getElementById('root')
@@ -44,7 +44,7 @@ const update = () => {
   })
 
   render(
-    <App digits={digits} />,
+    <Digits digits={digits} />,
     mountElement,
   )
 

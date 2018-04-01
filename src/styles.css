@@ -18,23 +18,12 @@ body,
   fill: #FAFAFA;
 }
 
-.digit {
-  display: flex;
-  width: 200px;
-  flex-wrap: wrap;
-}
-
-.digits {
-  display: flex;
-  flex-direction: row;
-}
-
 .container {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  max-width: 900px;
 }
