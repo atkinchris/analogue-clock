@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hand {
+  stroke-width: 10px;
+  stroke: #000;
+}
+
+.frame {
+  stroke-width: 5px;
+  stroke: #FAFAFA;
+  fill: #FAFAFA;
+}
+
+.digit {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.digits {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.a539aa9e.css.map*/
