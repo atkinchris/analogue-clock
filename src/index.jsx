@@ -4,25 +4,25 @@ import { render } from 'react-dom'
 import './styles.css'
 
 import Clocks from './Clocks'
+import DIGITS from './digits'
 
 const mountElement = document.getElementById('root')
 let showTime = true
 const tick = 1
-const targets = [
-  [225, 225],
-]
 const clocks = [
-  [0, 0],
+  [0, 0], [0, 0],
+  [0, 0], [0, 0],
+  [0, 0], [0, 0],
 ]
 
 const update = () => {
   const time = new Date().getSeconds()
 
-  showTime = time < 25
+  // showTime = time < 25
 
   for (let index = 0; index < clocks.length; index += 1) {
     const clock = clocks[index]
-    const target = targets[index]
+    const target = DIGITS[9][index]
 
     if (!showTime || clock[0] !== target[0]) {
       clock[0] = (clock[0] + tick) % 360

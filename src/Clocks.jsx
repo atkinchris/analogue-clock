@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import Clock from './Clock'
 
-const Clocks = ({ clocks }) => (
-  <div>
+const Digit = ({ clocks }) => (
+  <div className="digit">
     {
       clocks.map((rotations, index) => (
         // eslint-disable-next-line react/no-array-index-key
@@ -14,8 +14,8 @@ const Clocks = ({ clocks }) => (
   </div>
 )
 
-Clocks.propTypes = {
+Digit.propTypes = {
   clocks: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)).isRequired,
 }
 
-export default Clocks
+export default Digit
