@@ -8,16 +8,14 @@ body,
 }
 
 .hand {
-  stroke-width: 5px;
+  stroke-width: 10px;
   stroke: #000;
-  stroke-linecap: round;
 }
 
 .frame {
   stroke-width: 5px;
-  stroke: #000;
-  opacity: 0.05;
-  fill: none;
+  stroke: #FAFAFA;
+  fill: #FAFAFA;
 }
 
 .digit {
