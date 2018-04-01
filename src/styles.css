@@ -21,3 +21,8 @@ body {
   width: 200px;
   flex-wrap: wrap;
 }
+
+.digits {
+  display: flex;
+  flex-direction: row;
+}
