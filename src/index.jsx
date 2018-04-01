@@ -5,15 +5,11 @@ import './styles.css'
 
 import Digits from './components/Digits'
 import DIGITS from './digits'
+import buildArray from './buildArray'
 
 const mountElement = document.getElementById('root')
 const tick = 1
-const digits = [
-  [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
-  [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
-  [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
-  [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
-]
+const digits = buildArray(6, 4)
 
 const update = () => {
   const date = new Date()
